@@ -1,0 +1,16 @@
+export const appTheme = {
+  colors: {
+    LIGHT100: "#FFFFFF",
+    LIGHT400: "#F2F2F2",
+    LIGHT500: "#AEAEAE",
+    LIGHT600: "#767171",
+    LIGHT700: "#585858",
+    DARK300: "#1E1E1E",
+    DARK400: "#121212",
+    DARK900: "#000000",
+    PRIMARY400: "#D90B1C",
+    PRIMARY500: "#BF0A19",
+    SECONDARY300: "#292D73",
+    SECONDARY400: "#021E73",
+  },
+};
