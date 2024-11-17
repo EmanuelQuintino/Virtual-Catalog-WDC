@@ -1,11 +1,25 @@
 import { CardProps } from "../../@types/cardProps";
 import { Container } from "./style";
 
-export function CardProduct({ name, priceInCash }: CardProps) {
+export function CardProduct({
+  img,
+  cod,
+  name,
+  oldPrice,
+  priceInCash,
+  amountInstallments,
+  priceInstallment,
+}: CardProps) {
   return (
     <Container>
-      <h1>{name}</h1>
-      <strong>{priceInCash}</strong>
+      <img src={img} alt="" />
+      <span className="cod">cod.: {cod}</span>
+      <strong>{name}</strong>
+      <span className="oldPrice">de {oldPrice}</span>
+      <span className="oriceInCash">{priceInCash}</span>
+      <span className="installments">
+        ou em ${amountInstallments}x de {priceInstallment} no cartão
+      </span>
     </Container>
   );
 }

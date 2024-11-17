@@ -8,9 +8,13 @@ export function App() {
         return (
           <CardProduct
             key={product.cod}
+            img={product.img}
             cod={product.cod}
             name={product.name}
+            oldPrice={product.oldPrice}
             priceInCash={product.priceInCash}
+            amountInstallments={product.amountInstallments}
+            priceInstallment={product.priceInstallment}
           />
         );
       })}
