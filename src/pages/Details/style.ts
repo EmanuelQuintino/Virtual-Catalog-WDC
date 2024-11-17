@@ -10,12 +10,12 @@ export const Container = styled.div`
 
   header {
     position: relative;
-    padding: 2.4rem 4.2rem 0;
+    padding: 2.4rem 2.4rem 0;
 
     .labelPromotion {
       position: absolute;
       top: 2.4rem;
-      left: 4.2rem;
+      left: 2.4rem;
       padding: 0.8rem;
       background: ${({ theme }) => theme.colors.SECONDARY400};
       color: ${({ theme }) => theme.colors.LIGHT400};
@@ -27,7 +27,7 @@ export const Container = styled.div`
     .discount {
       position: absolute;
       top: 2rem;
-      right: 4.2rem;
+      right: 2.4rem;
       padding: 0.6rem;
       background: ${({ theme }) => theme.colors.PRIMARY500};
       color: ${({ theme }) => theme.colors.LIGHT400};
@@ -57,9 +57,7 @@ export const Container = styled.div`
   }
 
   main {
-    padding: 0 5.6rem;
     display: flex;
-    justify-content: start;
     flex-direction: column;
     gap: 0.8rem;
 
@@ -69,7 +67,7 @@ export const Container = styled.div`
     }
 
     strong {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       color: ${({ theme }) => theme.colors.LIGHT700};
     }
 
@@ -106,6 +104,7 @@ export const Container = styled.div`
       gap: 1.6rem;
       overflow-x: auto;
       padding: 0.5rem 0;
+      padding-right: 1.6rem;
 
       &::-webkit-scrollbar {
         height: 0.8rem;

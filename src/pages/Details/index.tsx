@@ -55,7 +55,11 @@ export function Details() {
         <div className="sugestionProducts">
           {sugestionProducts.map((product) => {
             return (
-              <Link to={`/product/${name}`} className="productSugestion">
+              <Link
+                to={`/product/${product.name}`}
+                key={product.cod}
+                className="productSugestion"
+              >
                 <img src={product.img} alt="" />
               </Link>
             );
