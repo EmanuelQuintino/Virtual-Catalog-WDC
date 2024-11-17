@@ -4,7 +4,6 @@ export const Container = styled.div`
   height: 100vh;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
 
@@ -57,6 +56,7 @@ export const Container = styled.div`
   }
 
   main {
+    padding: 1.2rem 3.2rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -90,7 +90,7 @@ export const Container = styled.div`
   }
 
   footer {
-    padding: 3.2rem 0 6rem 6rem;
+    padding: 1.2rem 0 2.4rem 2.4rem;
     width: 100%;
 
     strong {
