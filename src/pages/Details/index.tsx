@@ -1,10 +1,11 @@
 import { Container } from "./style";
 import { products } from "../../data/products";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export function Details() {
   const { name } = useParams();
   const [product] = products.filter((product) => product.name == name);
+  const sugestionProducts = products.filter((product) => product.name != name);
 
   const calcPriceDiscount =
     product.price - (product.price * product.discountPercentage) / 100;
@@ -50,13 +51,16 @@ export function Details() {
       </main>
 
       <footer>
-        {products.map((product) => {
-          return (
-            <div className="productSugestion">
-              <img src={product.img} alt="" />
-            </div>
-          );
-        })}
+        <strong>Veja também</strong>
+        <div className="sugestionProducts">
+          {sugestionProducts.map((product) => {
+            return (
+              <Link to={`/product/${name}`} className="productSugestion">
+                <img src={product.img} alt="" />
+              </Link>
+            );
+          })}
+        </div>
       </footer>
     </Container>
   );
