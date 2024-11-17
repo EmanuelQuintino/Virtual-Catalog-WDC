@@ -27,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.colors.LIGHT400};
+    background: ${({ theme }) => theme.colors.LIGHT100};
   }
     
   button {
