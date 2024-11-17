@@ -5,7 +5,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
 
   header {
@@ -103,18 +103,42 @@ export const Container = styled.div`
     .sugestionProducts {
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 1.6rem;
-      overflow: auto;
+      overflow-x: auto;
+      padding: 0.5rem 0;
+
+      &::-webkit-scrollbar {
+        height: 0.8rem;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: ${({ theme }) => theme.colors.LIGHT400};
+        border-radius: 0.4rem;
+      }
 
       .productSugestion {
-        height: 12rem;
-        width: 7.6rem;
+        flex: 0 0 auto;
+        width: 12rem;
+        height: 16rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid ${({ theme }) => theme.colors.LIGHT700}44;
+        border-radius: 8px;
+        padding: 0.8rem;
 
         img {
           width: 100%;
-          height: 100%;
+          height: auto;
           object-fit: contain;
+        }
+
+        p {
+          margin-top: 0.8rem;
+          font-size: 0.9rem;
+          text-align: center;
+          color: ${({ theme }) => theme.colors.LIGHT700};
         }
       }
     }
