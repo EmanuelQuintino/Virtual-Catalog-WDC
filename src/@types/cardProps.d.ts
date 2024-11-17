@@ -1,9 +1,8 @@
 export type CardProps = {
+  img: string;
   cod: string;
   name: string;
-  img: string;
-  oldPrice: number;
-  priceInCash: number;
-  priceInstallment: number;
+  price: number;
+  discountPercentage: number;
   amountInstallments: number;
 };

@@ -1,9 +1,10 @@
 import { CardProduct } from "../../components/CardProduct";
 import { products } from "../../data/products";
+import { Container } from "./style";
 
 export function App() {
   return (
-    <>
+    <Container>
       {products.map((product) => {
         return (
           <CardProduct
@@ -11,13 +12,12 @@ export function App() {
             img={product.img}
             cod={product.cod}
             name={product.name}
-            oldPrice={product.oldPrice}
-            priceInCash={product.priceInCash}
+            price={product.price}
+            discountPercentage={product.discountPercentage}
             amountInstallments={product.amountInstallments}
-            priceInstallment={product.priceInstallment}
           />
         );
       })}
-    </>
+    </Container>
   );
 }
