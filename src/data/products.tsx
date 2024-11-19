@@ -6,6 +6,7 @@ export const products = [
     price: 2500,
     discountPercentage: 10,
     amountInstallments: 12,
+    category: "furniture",
   },
   {
     cod: "002",
@@ -25,7 +26,7 @@ export const products = [
   },
   {
     cod: "004",
-    name: "Mesa de Jantar 6 Lugares em Madeira",
+    name: 'Smart Tv Led 32" Full HD TCL S5400AF Android TV, Controle com Comando de Voz, Google',
     img: "https://tfcvih.vtexassets.com/arquivos/ids/166455-1200-auto?v=638482865687900000&width=1200&height=auto&aspect=true",
     price: 1299,
     discountPercentage: 5,
